@@ -1,0 +1,9 @@
+docker search image_name  搜索镜像
+docker pull image_name:tag 下载镜像
+docker commtit container_id 将容器保存为一个镜像
+docker start container_id 启动容器
+docker kill container_id 停止容器
+docker rm container_id 删除容器
+docker run -i -t image_name:tag /bin/bash 启动一个容器
+docker run -it --link container_name_container_name image_name:tag /bin/bash 启动一个容器,并把它与另一个容器链接
+docker run -it -p localport:containerport -h hostname --name container_name image_name:tag /bin/bash 创建一个容器,并为该容器制定主机名及名字,同时建立宿主机与容器的端口映射.
